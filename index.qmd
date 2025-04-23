@@ -1,0 +1,29 @@
+---
+title: "Análisis de datos de calificaciones"
+author: "María Sojo Vega"
+format: html
+---
+
+## Carga de datos
+
+```{r}
+datos <- read.csv("StudentsPerformance.csv")
+```
+
+
+## Gráfico de dispersión
+```{r}
+#| label : grafico-dispersion
+
+plot (
+  x = datos$math.score,
+  y = datos$writing.score,
+  xlab = "calificación de matematicas",
+  ylab = "calificación de escritura",
+  pch = 19, col= "steelblue",
+  main= "calificación de matemáticas vs calificación de escritura"
+)
+```
+
+
+# GRÁFICO DE BARRAS 
